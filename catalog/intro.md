@@ -1,4 +1,4 @@
-This is a living style guide created by Fernando Millan Villalobos. 
+This is a living style guide created by Fernando Millan Villalobos.
 
 # About this documentation
 This style guide is meant to serve as a first attempt to set up a design system as a tool to capture, collect and share design patterns and guidelines for their usage in the context of the SG BSc Data Science´s data visualization competence. Adhering to these guidelines leads to a more consistent presentation of design work in all the competences and projects where data visualization plays a relevant role. The inspiration for this project and a considerable part of its content, has directly or indirectly [the NZZ Visuals Style guide](https://nzzdev.github.io/Storytelling-Styleguide/#/) as primary source and manual.
