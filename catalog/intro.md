@@ -40,7 +40,8 @@ rows:
     Changes: "Finalize Documentation"
   - Version: 0.1.6
     Date: 2021-04-07
-    Changes: "Update Workflow script"  - Version: 0.1.6
+    Changes: "Update Workflow script"  
+  - Version: 0.1.7
     Date: 2021-04-12
     Changes: "Set-up beginners guide" 
 ```
