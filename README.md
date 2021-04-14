@@ -4,7 +4,7 @@ This is built using http://www.catalog.style/
 
 We use the command line version of Catalog as documented here: https://docs.catalog.style/installation/create-catalog
 
-A more detailed set-up guide can be found [here]().
+A more detailed set-up guide can be found [here](Catalog-Set-up-Guide.pdf).
 
 ## Example for creating and publishing an instance of Catalog using Github Pages
 
