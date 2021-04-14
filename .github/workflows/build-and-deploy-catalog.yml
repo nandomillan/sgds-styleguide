@@ -1,0 +1,30 @@
+name: Build and Deploy Catalog
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install Catalog
+      run: yarn
+    - name: Set Environment Variable for Repository Name
+      run:   echo "REPOSITORY_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}' | sed -e "s/:refs//")" >> $GITHUB_ENV
+      shell: bash
+    - name: Echo Repository Name
+      run:   echo "$REPOSITORY_NAME"
+      shell: bash
+    - name: Build Catalog
+      run: npm run catalog-build --public-url=/"$REPOSITORY_NAME"/ --out=docs
+    - name: Commit Changes
+      uses: elstudio/actions-js-build/commit@v3
+      with:
+        commitMessage: Build 
